@@ -18,7 +18,8 @@
             .state('main.entidad', {
                 url: "/entidad",
                 templateUrl: "app/components/entidad/entidad.html",
-                data: { cdPageTitle: 'Entidad'}
+                data: { cdPageTitle: 'Entidad'},
+                controller: 'EntidadCtrl as vm',
             })
             ;
     }

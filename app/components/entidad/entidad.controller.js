@@ -14,7 +14,7 @@
         var vm = this;
         // variables
         vm.settings = {
-            title: "Titulo entidad"
+            title: "Titulo"
         };
         vm.objeto = {};
         // functiones 
