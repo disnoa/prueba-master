@@ -1,0 +1,25 @@
+{
+  "name": "BANCO DE CHILE",
+  "authors": [
+    "Maria Vargas <disnoa@gmail.com>"
+  ],
+  "description": "Prueba Ingreso Front-End Designer",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "1.4.7",
+    "angular-bootstrap": "^2.5.0",
+    "jquery": "^3.2.1",
+    "oclazyload": "^1.1.0",
+    "angular-ui-router": "0.3.1"
+  }
+}
