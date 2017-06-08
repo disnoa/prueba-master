@@ -20,6 +20,20 @@
                 templateUrl: "app/components/entidad/entidad.html",
                 data: { cdPageTitle: 'Entidad'},
                 controller: 'EntidadCtrl as vm',
+                resolve: {
+                    loadPlugin: ["$ocLazyLoad", function ($ocLazyLoad) {
+                        return $ocLazyLoad.load([
+                            {
+                                insertBefore: '#loadJS',
+                                files: [
+                                    'app/components/entidad/entidad.service.js',
+                                    'app/components/entidad/entidad.controller.js',
+                                ]
+                            },
+
+                        ]);
+                    }]
+                }
             })
             ;
     }
