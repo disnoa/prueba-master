@@ -1,3 +1,22 @@
-<!-- entidad html -->
+<!-- MAIN TITLE - START -->
 <h1 class="text-primary text-bolder m-t-sm m-b-lg" ng-bind="vm.settings.title"></h1>
-<my-portlets portlet-title="Titulo Caja" portlet-body="app/components/entidad/caja/cajaBody.html"></my-portlets>
+<!-- MAIN TITLE - END -->
+
+<!-- WIDGET - START -->
+<my-portlets portlet-css-class="portlet--gray portlet--bordered m-t m-b-xl" portlet-title="Titulo Caja" portlet-body="app/components/entidad/blocks/cajaBody.html"></my-portlets>
+<!-- WIDGET - END -->
+
+<!-- ACCORDION - START -->
+  <uib-accordion close-others="oneAtATime">
+    <div uib-accordion-group class="panel-default m-t-lg m-b" is-open="status.open">
+      	<uib-accordion-heading>
+        	Total items: X 
+
+        	<button type="button" class="pull-right btn btn-default panel__btntoggle"> <span ng-bind="status.open ? 'Cerrar' : 'Abrir'"></span> </button>
+        	
+        	<!-- <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': status.open, 'glyphicon-chevron-right': !status.open}"></i> -->
+      	</uib-accordion-heading>
+     	 This is just some content to illustrate fancy headings.
+    </div>
+  </uib-accordion>
+<!-- ACCORDION - END -->

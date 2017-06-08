@@ -33,7 +33,8 @@
             restrict: 'E',
             scope: {
                 portletTitle: '@',
-                portletBody: '@'
+                portletBody: '@',
+                portletCssClass: '@'
             },
             templateUrl: 'app/widgets/portlets.html'
         };
