@@ -1,9 +1,9 @@
 <!-- MAIN TITLE - START -->
-<h1 class="text-primary text-bolder m-t-sm m-b-lg" ng-bind="vm.settings.title"></h1>
+	<h1 class="text-primary text-bolder m-t-sm m-b-lg" ng-bind="vm.settings.title"></h1>
 <!-- MAIN TITLE - END -->
 
 <!-- WIDGET - START -->
-<my-portlets portlet-css-class="portlet--gray portlet--bordered m-t m-b-xl" portlet-title="Titulo Caja" portlet-body="app/components/entidad/blocks/cajaBody.html"></my-portlets>
+	<my-portlets portlet-css-class="portlet--gray portlet--bordered m-t m-b-xl" portlet-title="Titulo Caja" portlet-body="app/components/entidad/blocks/cajaBody.html"></my-portlets>
 <!-- WIDGET - END -->
 
 <!-- ACCORDION - START -->
@@ -64,3 +64,10 @@
     </div>
   </uib-accordion>
 <!-- ACCORDION - END -->
+
+<!-- DATATABLE - START -->
+	<table datatable="" dt-options="vm.dtOptions" dt-columns="vm.dtColumns" class="table table--bghead"></table>
+<!-- DATATABLE - END -->
+
+<!-- FOOTER -->
+<div class="m-xl"></div>

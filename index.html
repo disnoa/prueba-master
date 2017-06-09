@@ -16,7 +16,7 @@
         <!-- endinject -->
 
         <!-- inject:css -->
-        <link rel="stylesheet" href="assets/css/style.min.css">
+        <link rel="stylesheet" href="assets/css/style.min.css" id="loadCSS">
         <!-- endinject -->
     </head>
 
@@ -52,8 +52,11 @@
         <script src="app/layout/content.controller.js"></script>
         <script src="app/layout/cdPageTitle.js"></script>
         
+        
         <!-- Modulos -->
         <script src="app/components/entidad/entidad.module.js"></script>
+        <script src="bower_components/angular-datatables/dist/angular-datatables.min.js"></script>
+        <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 
         <!-- dependencias state -->
         <div id="loadJS"></div>

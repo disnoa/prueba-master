@@ -22,7 +22,9 @@
     "oclazyload": "^1.1.0",
     "angular-ui-router": "0.3.1",
     "angular-animate": "1.4.7",
-    "angular-datatables": "^4.1.0",
-    "datatables.net": "^1.10.15"
+    "angular-datatables": "0.5.6",
+    "datatables.net": "^1.10.15",
+    "datatables.net-bs": "^2.1.1",
+    "font-awesome": "fontawesome#^4.7.0"
   }
 }

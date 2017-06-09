@@ -1,5 +1,5 @@
 (function() {
     'use strict';
 
-    angular.module('app.entidad', []);
+    angular.module('app.entidad', ['datatables']);
 })();

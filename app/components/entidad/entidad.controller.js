@@ -6,23 +6,30 @@
         .controller('EntidadCtrl',EntidadCtrl);
 
     /* @ngInject */
-    EntidadCtrl.$inject = ['dataService','$scope'];
+    EntidadCtrl.$inject = ['dataService','$scope','DTOptionsBuilder', 'DTColumnBuilder'];
     /**
     * EntidadCtrl - Descripcion 
     **/
-    function EntidadCtrl(dataService,$scope) {
+    function EntidadCtrl(dataService,$scope,DTOptionsBuilder, DTColumnBuilder) {
         var vm = this;
         // variables
         vm.settings = {
             title: "Titulo"
         };
-        vm.objeto = {};
-        // functiones 
-        vm.functions= functions;
 
-        function functions () {
-            // 
-        }
+        vm.dtOptions = DTOptionsBuilder.fromSource('data.json') 
+            .withPaginationType('full_numbers')
+            .withDisplayLength(10)
+            .withDOM('');
+        vm.dtColumns = [
+            DTColumnBuilder.newColumn('id').withTitle('').notSortable().renderWith(function (data) {
+              return '<label class="pos-rel"> <input type="checkbox" class="ace"> <span class="lbl"></span> </label>'; }),
+            DTColumnBuilder.newColumn('lorem').withTitle('lLorem').notSortable(),
+            DTColumnBuilder.newColumn('ipsum').withTitle('Ipsum').notSortable(),
+            DTColumnBuilder.newColumn('dolor').withTitle('Dolor').notSortable(),
+            DTColumnBuilder.newColumn('sit').withTitle('Sit').notSortable(),
+            DTColumnBuilder.newColumn('amet').withTitle('Amet').notSortable()
+        ];
 
         $scope.today = function() {
             $scope.dt = new Date();
