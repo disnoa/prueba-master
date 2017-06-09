@@ -24,7 +24,7 @@
         vm.dtColumns = [
             DTColumnBuilder.newColumn('id').withTitle('').notSortable().renderWith(function (data) {
               return '<label class="pos-rel"> <input type="checkbox" class="ace"> <span class="lbl"></span> </label>'; }),
-            DTColumnBuilder.newColumn('lorem').withTitle('lLorem').notSortable(),
+            DTColumnBuilder.newColumn('lorem').withTitle('Lorem').notSortable(),
             DTColumnBuilder.newColumn('ipsum').withTitle('Ipsum').notSortable(),
             DTColumnBuilder.newColumn('dolor').withTitle('Dolor').notSortable(),
             DTColumnBuilder.newColumn('sit').withTitle('Sit').notSortable(),
