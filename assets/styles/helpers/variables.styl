@@ -9,3 +9,45 @@ $brand-primary 			=#002157;
 $btn-default-color		= #333;
 $btn-default-bg     	= #fff;
 $btn-default-border 	= #ccc;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Number of columns in the grid.
+$grid-columns ?=              12
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width ?=         30px
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+$grid-float-breakpoint ?=     $screen-sm-min
+//** Point at which the navbar begins collapsing.
+$grid-float-breakpoint-max ?= ($grid-float-breakpoint - 1)
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+$navbar--banco-color ?=           #fff
+$navbar--banco-bg ?=              $brand-primary
+$navbar--banco-border ?=          $brand-primary
+
+// Navbar links
+$navbar--banco-link-color ?=              #fff
+$navbar--banco-link-hover-color ?=        #eee
+$navbar--banco-link-hover-bg ?=           transparent
+$navbar--banco-link-active-color ?=       #fff
+$navbar--banco-link-active-bg ?=          lightness($brand-primary, 80%)
+$navbar--banco-link-disabled-color ?=     #ccc
+$navbar--banco-link-disabled-bg ?=        transparent
+
+// Navbar brand label
+$navbar--banco-brand-color ?=             $navbar--banco-link-color
+$navbar--banco-brand-hover-color ?=       lightness($brand-primary, 80%)
+$navbar--banco-brand-hover-bg ?=          transparent
+
+// Navbar toggle
+$navbar--banco-toggle-hover-bg ?=         #ddd
+$navbar--banco-toggle-icon-bar-bg ?=      #fff
+$navbar--banco-toggle-border-color ?=     #ddd
