@@ -1,1 +1,44 @@
-formulario de busqueda
+<div class="form-body">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+				<p class="input-group">
+				  <input type="text" placeholder="Seleccione..." class="form-control" uib-datepicker-popup="{{vm.format}}" ng-model="vm.dt" is-open="vm.popup1.opened" datepicker-options="vm.dateOptions" ng-required="true" close-text="Close" alt-input-formats="vm.altInputFormats" />
+				  <span class="input-group-btn">
+				    <button type="button" class="btn btn-default btn--icon" ng-click="vm.open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+				  </span>
+				</p>
+            </div>
+        </div>
+        <!--/span-->
+        <div class="col-md-3">
+            <p class="input-group">
+			  	<input type="text" placeholder="Seleccione..." class="form-control" uib-datepicker-popup="{{vm.format}}" ng-model="vm.dt2" is-open="vm.popup2.opened" datepicker-options="vm.dateOptions" ng-required="true" close-text="Close" alt-input-formats="vm.altInputFormats" />
+			  	<span class="input-group-btn">
+				    <button type="button" class="btn btn-default btn--icon" ng-click="vm.open2()"><i class="glyphicon glyphicon-calendar"></i></button>
+			  	</span>
+			</p>
+        </div>
+        <!--/span-->
+        <div class="col-md-3 col-md-offset-right-3">
+            <div class="form-group">
+                <select class="form-control">
+                    <option value="">Seleccione</option>
+                </select>
+            </div>
+        </div>
+        <!--/span-->
+    </div>
+    <!--/row-->
+    <div class="row flex-block-middle">
+        <div class="col-md-6">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Busqueda general">
+            </div>
+        </div>
+
+        <div class="col-md-3 col-md-offset-3">
+			<button class="btn btn-success btn-sm pull-right" style="">BUSCAR</button>
+        </div>
+    </div>
+</div>

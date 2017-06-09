@@ -13,60 +13,13 @@
         	Total items: <span ng-bind="vm.total"></span> 
         	<button type="button" class="pull-right btn btn-default btn-sm panel__btntoggle"> <span ng-bind="status.open ? 'Cerrar' : 'Abrir'"></span> </button>
       	</uib-accordion-heading>
-     	
-		<form action="#" class="horizontal-form">
-	        <div class="form-body">
-	            <div class="row">
-	                <div class="col-md-3">
-	                    <div class="form-group">
-							<p class="input-group">
-							  <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
-							  <span class="input-group-btn">
-							    <button type="button" class="btn btn-default btn--icon" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
-							  </span>
-							</p>
-	                    </div>
-	                </div>
-	                <!--/span-->
-	                <div class="col-md-3">
-	                    <p class="input-group">
-						  	<input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
-						  	<span class="input-group-btn">
-							    <button type="button" class="btn btn-default btn--icon" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
-						  	</span>
-						</p>
-	                </div>
-	                <!--/span-->
-	                <div class="col-md-3 col-md-offset-right-3">
-	                    <div class="form-group">
-	                        <select class="form-control">
-	                            <option value="">Seleccione</option>
-	                        </select>
-	                    </div>
-	                </div>
-	                <!--/span-->
-	            </div>
-	            <!--/row-->
-	            <div class="row flex-block-middle">
-	                <div class="col-md-6">
-	                    <div class="form-group">
-	                        <input type="text" class="form-control" placeholder="Busqueda general">
-	                    </div>
-	                </div>
-
-	                <div class="col-md-3 col-md-offset-3">
-						<button class="btn btn-success btn-sm pull-right" style="">BUSCAR</button>
-	                </div>
-	            </div>
-	        </div>
-	    </form>
-
+		<form action="#" class="horizontal-form" ng-include="'app/components/entidad/blocks/formBusqueda.html'"> </form>
     </div>
   </uib-accordion>
 <!-- ACCORDION - END -->
 
 <!-- DATATABLE - START -->
-	<div class="grid-table">
+	<div class="grid-table table-responsive">
 		<table datatable="" dt-options="vm.dtOptions" dt-columns="vm.dtColumns" class="table table-nosort table--bghead"></table>
 	</div>
 <!-- DATATABLE - END -->
