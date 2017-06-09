@@ -10,7 +10,7 @@
   <uib-accordion close-others="oneAtATime">
     <div uib-accordion-group class="panel-default m-t-lg m-b" is-open="status.open">
       	<uib-accordion-heading>
-        	Total items: X 
+        	Total items: <span ng-bind="vm.total"></span> 
         	<button type="button" class="pull-right btn btn-default btn-sm panel__btntoggle"> <span ng-bind="status.open ? 'Cerrar' : 'Abrir'"></span> </button>
       	</uib-accordion-heading>
      	
@@ -66,7 +66,9 @@
 <!-- ACCORDION - END -->
 
 <!-- DATATABLE - START -->
-	<table datatable="" dt-options="vm.dtOptions" dt-columns="vm.dtColumns" class="table table--bghead"></table>
+	<div class="grid-table">
+		<table datatable="" dt-options="vm.dtOptions" dt-columns="vm.dtColumns" class="table table-nosort table--bghead"></table>
+	</div>
 <!-- DATATABLE - END -->
 
 <!-- FOOTER -->

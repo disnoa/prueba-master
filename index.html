@@ -2,8 +2,8 @@
 <html ng-app="app" ng-controller="MainCtrl as main">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title cd-page-title></title>
         <link rel="shortcut icon" ng-href="{{main.favicon}}"/> 
         <!-- META TAGs -->
@@ -58,10 +58,11 @@
         
         <!-- Modulos -->
         <script src="app/components/entidad/entidad.module.js"></script>
-        <script src="bower_components/angular-datatables/dist/angular-datatables.min.js"></script>
-        <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
 
         <!-- dependencias state -->
         <div id="loadJS"></div>
+        <script src="bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="bower_components/angular-datatables/dist/angular-datatables.min.js"></script>
+        <script src="bower_components/angular-datatables/dist/plugins/bootstrap/angular-datatables.bootstrap.min.js"></script>
     </body>
 </html>

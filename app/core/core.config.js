@@ -26,10 +26,8 @@
                             {
                                 insertBefore: '#loadCSS',
                                 files: [
-                                    'bower_components/angular-datatables/dist/css/angular-datatables.css',
                                     'bower_components/angular-datatables/dist/plugins/bootstrap/datatables.bootstrap.min.css',
                                     'bower_components/font-awesome/css/font-awesome.min.css',
-                                    '',
                                 ]
                             },
                             {
